@@ -1,3 +1,3 @@
-# Addon Name
+# AllStats
 
-This is the repository for <Addon Name>. Modified for Ascension.gg. 
+This is the repository for AllStats. Modified for Ascension.gg. 
