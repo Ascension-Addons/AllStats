@@ -1,14 +1,11 @@
 function AllStats_OnLoad()
-	CharacterAttributesFrame:Hide();
-	CharacterModelFrame:SetHeight(300);
-	PaperDollFrame_UpdateStats = NewPaperDollFrame_UpdateStats;
-end
-
-function NewPaperDollFrame_UpdateStats()
-	PrintStats();
+	hooksecurefunc(AscensionCharacterStatsPanel, "UpdateStats", PrintStats)
 end
 
 function PrintStats()
+	if AscensionCharacterStatsPanel:GetAppropriateUnitToken() ~= "player" then
+		return
+	end
 	local str = AllStatsFrameStat1;
 	local agi = AllStatsFrameStat2;
 	local sta = AllStatsFrameStat3;

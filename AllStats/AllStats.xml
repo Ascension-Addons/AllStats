@@ -1,15 +1,11 @@
 <Ui xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.blizzard.com/wow/ui/">
 	<Script file="AllStats.lua"/>
-	<Frame name="AllStatsFrame" parent="PaperDollFrame" toplevel="true">
-    <Size>
-      <AbsDimension x="115" y="500"/>
-    </Size>
+	<Frame name="AllStatsFrame" parent="AscensionPaperDollPanel">
+		<Size>
+		<AbsDimension x="115" y="500"/>
+		</Size>
 		<Anchors>
-			<Anchor point="TOPLEFT" relativeTo="AscensionCharacterFrame" relativePoint="TOPRIGHT">
-				<Offset>
-					<AbsDimension x="-4" y= "-12"/>
-				</Offset>
-			</Anchor>
+			<Anchor point="TOPLEFT" relativeTo="AscensionCharacterFrame" relativePoint="TOPRIGHT" x="2" y="-6"/>
 		</Anchors>
 		<Layers>
 			<Layer level="BACKGROUND">
@@ -424,14 +420,14 @@
 			</OnShow>
 		</Scripts>
 	</Frame>
-	<Button name="AllStatsButtonShowFrame" parent="PaperDollFrame" inherits="UIPanelButtonTemplate" text="Stats->">
+	<Button name="AllStatsButtonShowFrame" parent="AscensionPaperDollPanelModel" inherits="UIPanelButtonTemplate" text="AllStats->">
 		<Size>
 			<AbsDimension x="50" y="20"/>
 		</Size>
 		<Anchors>
 			<Anchor point="BOTTOMRIGHT">
 				<Offset>
-					<AbsDimension x="-43" y="86"/>
+					<AbsDimension x="20" y="-22"/>
 				</Offset>
 			</Anchor>
 		</Anchors>
