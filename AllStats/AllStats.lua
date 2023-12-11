@@ -3,7 +3,7 @@ function AllStats_OnLoad()
 end
 
 function PrintStats()
-	if AscensionCharacterStatsPanel:GetAppropriateUnitToken() ~= "player" then
+	if AscensionCharacterStatsPanel:GetUnit() ~= "player" then
 		return
 	end
 	local str = AllStatsFrameStat1;
